@@ -54,6 +54,7 @@ The tasks and the steps that you must follow to complete each one are as follows
 
 **Task 1: Establish a connection**
 
+
 Step one: Import MySQLConnectionPool
 
 Step two: Import Error
@@ -65,17 +66,18 @@ Step four: Obtain a connection from pool_a and create a cursor object to communi
 
 **Task 2: Implement a stored procedure called PeakHours**
 
+
 Step one: Write a SQL CREATE PROCEDURE query for PeakHours
 
 Use HOUR to extract the hour part from the BookingSlot.
 
 Use COUNT to count the number of bookings.
 
-Use GROUP BY on booking hour.
+Use GROUP BY on booking hours.
 
 Use ORDER BY on the number of bookings in descending order.
 
-Step two: Run the stored procedure query by invoking execute module on the cursor.
+Step two: Run the stored procedure query by invoking the execute module on the cursor.
 
 Step three: Invoke callproc to call the stored procedure.
 
@@ -85,7 +87,7 @@ Step five: Extract the names of the columns.
 
 Step six: Print the names of the columns.
 
-Step seven: Print the sorted data using for loop.
+Step seven: Print the sorted data using a for loop.
 
 
 **Task 3: Implement a stored procedure GuestStatus**
@@ -106,7 +108,7 @@ If the Role in the Employee table is Head Waiter then the status is Order served
 
 Step four: LEFT JOIN Bookings table with Employees ON EmployeeID
 
-Step five: Run the stored procedure query by invoking execute module on the cursor.
+Step five: Run the stored procedure query by invoking the execute module on the cursor.
 
 Step six: Invoke callproc to call the stored procedure.
 
